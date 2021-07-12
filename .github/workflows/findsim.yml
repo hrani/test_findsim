@@ -45,3 +45,4 @@ jobs:
           python -m pip install jsonschema
       - name: Test scripts
         run: chmod +x ./test.sh
+            ./test.sh

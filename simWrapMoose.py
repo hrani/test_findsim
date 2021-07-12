@@ -244,7 +244,7 @@ class SimWrapMoose( SimWrap ):
         if file_extension == '.xml':
             self.modelId, errormsg = moose.readSBML( fname, 'model', 'ee' )
         elif file_extension == '.g':
-            self.modelId = moose.loadModel( fname, 'model', 'ee' )[0]
+            self.modelId = moose.loadModel( fname, 'model', 'ee' )
         # moose.delete('/model[0]/kinetics[0]/compartment_1[0]')
         elif file_extension == '.py':
             # Assume a moose script for creating the model in rdesigneur.
